@@ -5,7 +5,7 @@ use Carp qw(croak);
 use Clone::Any qw(clone);
 use MARC::Descriptions::Data qw(%MARC_tag_data);
 
-our $VERSION = '0.8';
+our $VERSION = '0.9';
 
 =head1 NAME
 

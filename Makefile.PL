@@ -18,6 +18,7 @@ sub filecheck {
 	'NAME'		=> 'MARC::Descriptions',
 	'DISTNAME'	=> 'MARC-Descriptions',
 	'VERSION_FROM'	=> 'lib/MARC/Descriptions.pm', # finds $VERSION
+	'ABSTRACT_FROM' => 'lib/MARC/Descriptions.pm',
 	'PMLIBDIRS'	=> [ qw( lib/ ) ],
 	'AUTHOR'	=> 'David Christensen <DChristensenSPAMLESS@westman.wave.ca>',
 	'PREREQ_PM'	=> {

@@ -4,16 +4,52 @@ require Exporter;
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(%MARC_tag_data);
 
-our $VERSION = "0.5";
+our $VERSION = "0.6";
 
 #-----------------------------------------------------------------------------------------
 # Mods:
+# 2004.01.16 - Added tags < 010
 # 2003.12.09 - Renamed from MARC::tagdata to MARC::Descriptions::Data
 # 2003.12.08 - Note that all text with '$' chars must have that char escaped.
 # 2003.12.07 - Replaced all double-quote chars in text with single quote.
 #            - Original version auto-built from CSV files.
 #-----------------------------------------------------------------------------------------
 %MARC_tag_data = (
+        "001" => {
+	        flags => "m",
+                shortname => "Control",
+                description => "Control Number",
+	      },
+        "003" => {
+	        flags => "m",
+                shortname => "",
+                description => "Control Number Identifier",
+	      },
+        "005" => {
+	        flags => "m",
+                shortname => "",
+                description => "Date and Time of Latest Transaction",
+	      },
+        "006" => {
+	        flags => "R",
+                shortname => "",
+                description => "Fixed-length Data Elements - Additional Material Characteristics",
+	      },
+        "007" => {
+	        flags => "R",
+                shortname => "",
+                description => "Physical Description Fixed Field",
+	      },
+        "008" => {
+	        flags => "m",
+                shortname => "",
+                description => "Fixed-length Data Elements",
+	      },
+        "009" => {
+	        flags => "",
+                shortname => "",
+                description => "OBSOLETE - Physical Description Fixed-Field for Archival Collection",
+	      },
 	"010" => {
 		flags => "",
 		shortname => "LCCN",

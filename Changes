@@ -1,5 +1,8 @@
 Revision history for Perl extension MARC::Descriptions
 
+0.9  January 16, 2004
+     - added tags < 010
+
 0.8  December 09, 2003
      - Renamed MARC::tagdata to MARC::Descriptions::Data
 
